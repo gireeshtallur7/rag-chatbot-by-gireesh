@@ -1,0 +1,316 @@
+====================================================
+MACHINE LEARNING & DEEP LEARNING - QUICK NOTES
+====================================================
+
+1. WHAT IS ARTIFICIAL INTELLIGENCE (AI)?
+----------------------------------------------------
+Artificial Intelligence (AI) is the ability of a machine
+to perform tasks that normally require human intelligence,
+such as learning, reasoning, decision-making, and problem-solving.
+
+Examples:
+- ChatGPT
+- Self-driving cars
+- Virtual assistants (Siri, Alexa)
+
+====================================================
+2. WHAT IS MACHINE LEARNING (ML)?
+----------------------------------------------------
+Machine Learning is a subset of AI that enables computers
+to learn patterns from data and make predictions or decisions
+without being explicitly programmed.
+
+Definition:
+"Machine Learning is the field of study that gives computers
+the ability to learn from data and improve automatically
+through experience."
+
+Examples:
+- Email spam detection
+- Movie recommendations
+- House price prediction
+- Fraud detection
+
+Machine Learning Workflow:
+1. Collect Data
+2. Clean and Prepare Data
+3. Split Data into Train and Test Sets
+4. Select Model
+5. Train Model
+6. Evaluate Model
+7. Deploy Model
+
+====================================================
+3. TYPES OF MACHINE LEARNING
+----------------------------------------------------
+
+A. Supervised Learning
+----------------------
+The model learns using labeled data.
+
+Input --> Output is already known.
+
+Examples:
+- Predicting house prices
+- Predicting student marks
+- Email spam classification
+
+Algorithms:
+- Linear Regression
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- SVM
+- KNN
+
+B. Unsupervised Learning
+------------------------
+The model learns from unlabeled data.
+
+Examples:
+- Customer segmentation
+- Pattern detection
+
+Algorithms:
+- K-Means Clustering
+- Hierarchical Clustering
+- DBSCAN
+
+C. Reinforcement Learning
+-------------------------
+The model learns through rewards and penalties.
+
+Examples:
+- Robotics
+- Self-driving cars
+- Game-playing AI
+
+====================================================
+4. COMMON MACHINE LEARNING ALGORITHMS
+----------------------------------------------------
+
+1. Linear Regression
+   - Predicts continuous values.
+   Example: House price prediction.
+
+2. Logistic Regression
+   - Used for classification.
+   Example: Spam or Not Spam.
+
+3. Decision Tree
+   - Tree-like structure for decisions.
+
+4. Random Forest
+   - Collection of multiple decision trees.
+
+5. KNN (K-Nearest Neighbors)
+   - Classifies based on nearest neighbors.
+
+6. Support Vector Machine (SVM)
+   - Finds the best boundary between classes.
+
+====================================================
+5. OVERFITTING AND UNDERFITTING
+----------------------------------------------------
+
+Overfitting:
+- Model memorizes training data.
+- Performs well on training data.
+- Performs poorly on new data.
+
+Solution:
+- More data
+- Cross-validation
+- Regularization
+
+Underfitting:
+- Model fails to learn patterns.
+- Poor performance on both training and testing data.
+
+Solution:
+- Use better features
+- Increase model complexity
+
+====================================================
+6. EVALUATION METRICS
+----------------------------------------------------
+
+Regression Metrics:
+- MAE (Mean Absolute Error)
+- MSE (Mean Squared Error)
+- RMSE (Root Mean Squared Error)
+- R² Score
+
+Classification Metrics:
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+====================================================
+7. WHAT IS DEEP LEARNING?
+----------------------------------------------------
+
+Deep Learning is a subset of Machine Learning that uses
+Artificial Neural Networks with multiple hidden layers.
+
+Deep Learning can automatically learn complex patterns
+from large amounts of data.
+
+Examples:
+- Face Recognition
+- Speech Recognition
+- ChatGPT
+- Image Classification
+
+====================================================
+8. MACHINE LEARNING VS DEEP LEARNING
+----------------------------------------------------
+
+Machine Learning:
+- Requires feature engineering.
+- Works well on small to medium datasets.
+- Faster training.
+- Easier to interpret.
+
+Deep Learning:
+- Learns features automatically.
+- Requires large datasets.
+- Higher computational power.
+- Better performance on complex tasks.
+
+====================================================
+9. ARTIFICIAL NEURAL NETWORK (ANN)
+----------------------------------------------------
+
+Inspired by the human brain.
+
+Components:
+1. Input Layer
+2. Hidden Layer(s)
+3. Output Layer
+
+Process:
+Input --> Hidden Layers --> Output
+
+Popular Activation Functions:
+- ReLU
+- Sigmoid
+- Tanh
+- Softmax
+
+====================================================
+10. DEEP LEARNING ARCHITECTURES
+----------------------------------------------------
+
+A. ANN (Artificial Neural Network)
+   - General-purpose neural network.
+
+B. CNN (Convolutional Neural Network)
+   - Used for image processing.
+   Examples:
+   - Face detection
+   - Medical image analysis
+
+C. RNN (Recurrent Neural Network)
+   - Used for sequential data.
+   Examples:
+   - Language translation
+   - Text prediction
+
+D. LSTM
+   - Improved version of RNN.
+   - Handles long-term dependencies.
+
+E. Transformers
+   - State-of-the-art architecture.
+   - Used in ChatGPT, Gemini, Claude.
+
+====================================================
+11. MACHINE LEARNING LIBRARIES
+----------------------------------------------------
+
+1. NumPy
+   - Numerical computations
+
+2. Pandas
+   - Data manipulation
+
+3. Matplotlib
+   - Data visualization
+
+4. Seaborn
+   - Statistical visualization
+
+5. Scikit-Learn
+   - Machine learning algorithms
+
+6. TensorFlow
+   - Deep learning framework
+
+7. Keras
+   - High-level API for TensorFlow
+
+8. PyTorch
+   - Deep learning framework
+
+====================================================
+12. APPLICATIONS OF MACHINE LEARNING
+----------------------------------------------------
+
+- Recommendation Systems
+- Fraud Detection
+- Medical Diagnosis
+- Stock Market Prediction
+- Chatbots
+- Customer Segmentation
+- Demand Forecasting
+
+====================================================
+13. APPLICATIONS OF DEEP LEARNING
+----------------------------------------------------
+
+- Image Recognition
+- Face Detection
+- Speech Recognition
+- Natural Language Processing
+- Autonomous Vehicles
+- ChatGPT and Large Language Models
+
+====================================================
+14. INTERVIEW QUESTIONS
+----------------------------------------------------
+
+Q1. What is Machine Learning?
+Answer:
+Machine Learning is a subset of AI that enables systems
+to learn from data and improve their performance without
+being explicitly programmed.
+
+Q2. What is Deep Learning?
+Answer:
+Deep Learning is a subset of Machine Learning that uses
+multi-layer neural networks to automatically learn
+complex patterns from data.
+
+Q3. Difference between AI, ML, and DL?
+
+AI -> Broad field of intelligent systems.
+ML -> Subset of AI that learns from data.
+DL -> Subset of ML using neural networks.
+
+Q4. What is Overfitting?
+Answer:
+Overfitting occurs when a model learns the training data
+too well and performs poorly on unseen data.
+
+Q5. What is a Neural Network?
+Answer:
+A Neural Network is a computational model inspired by
+the human brain that consists of interconnected neurons
+used to learn patterns from data.
+
+====================================================
+END OF NOTES
+====================================================

@@ -1,0 +1,74 @@
+# LLM & RAG Framework
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+
+# Mistral AI
+mistralai
+
+# Vector Database
+chromadb
+
+# Embedding Models
+sentence-transformers
+huggingface-hub
+
+# Document Loaders
+pypdf
+pdfplumber
+unstructured
+python-docx
+docx2txt
+
+# Data Handling
+pandas
+numpy
+
+# Environment Variables
+python-dotenv
+
+# API Requests
+requests
+
+# Token Counting
+tiktoken
+
+# Web Application
+streamlit
+
+# FastAPI (Optional API Deployment)
+fastapi
+uvicorn
+
+# Database
+sqlalchemy
+
+# File Upload Support
+python-multipart
+
+# Logging & Utilities
+tqdm
+
+# Optional OCR
+pytesseract
+Pillow
+
+# Optional HTML Processing
+beautifulsoup4
+lxml
+
+# Optional Web Scraping
+selenium
+
+# Reranking (Optional)
+rank-bm25
+
+# Caching
+diskcache
+
+# Async Support
+aiofiles
+
+# Testing
+pytest
