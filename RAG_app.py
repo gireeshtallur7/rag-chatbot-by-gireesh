@@ -57,28 +57,46 @@ reply:
 option = st.radio(
     "Choose PDF Source",
     [
-        "Use Existing PDF",
+        "Use Default Stock Market PDF",
         "Upload New PDF"
     ]
 )
 
 vectorstore = None
 
-if option == "Use Existing PDF":
+if option == "Use Default Stock Market PDF":
 
     try:
-        vectorstore = Chroma(
-            persist_directory="chroma_db",
-            embedding_function=embedding_model
+
+        pdf_path = "Module 1_Introduction to Stock Markets.pdf"
+
+        loader = PyPDFLoader(pdf_path)
+        docs = loader.load()
+
+        splitter = RecursiveCharacterTextSplitter(
+            chunk_size=1000,
+            chunk_overlap=200
         )
 
-        collection = vectorstore.get()
+        chunks = splitter.split_documents(docs)
 
-        st.success("Existing ChromaDB loaded successfully")
-        st.write("Total Documents:", len(collection["documents"]))
+        vectorstore = Chroma.from_documents(
+            documents=chunks,
+            embedding=embedding_model
+        )
+
+        st.success(
+            f"Default PDF loaded successfully. {len(chunks)} chunks created."
+        )
+
+        st.write(
+            "Total Documents:",
+            len(chunks)
+        )
 
     except Exception as e:
-        st.error(f"Error loading ChromaDB: {e}")
+        st.error(f"Error loading PDF: {e}")
+
 
 elif option == "Upload New PDF":
 
