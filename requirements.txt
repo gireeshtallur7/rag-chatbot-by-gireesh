@@ -27,3 +27,5 @@ tiktoken
 sqlalchemy
 tqdm
 aiofiles
+
+protobuf==3.20.3
