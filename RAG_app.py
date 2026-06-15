@@ -21,7 +21,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📚 RAG PDF Assistant")
+st.title("📚 RAG PDF Assistant By Gireesh Tallur")
 st.markdown("Ask questions from your PDF documents")
 
 embedding_model = HuggingFaceEmbeddings(
@@ -219,3 +219,5 @@ if question:
             st.write(f"Chunk {i+1}")
             st.write(doc.page_content[:1000])
             st.divider()
+st.markdown("---")
+st.markdown("Developed by Gireesh Tallur")
