@@ -14,6 +14,10 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv()
+st.write(
+    "API Key Loaded:",
+    bool(os.getenv("MISTRAL_API_KEY"))
+)
 
 st.set_page_config(
     page_title="RAG PDF Assistant",
@@ -28,9 +32,13 @@ embedding_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
+api_key = os.getenv("MISTRAL_API_KEY")
+
 llm = ChatMistralAI(
-    model="mistral-small-2603"
+    model="mistral-small-latest",
+    api_key=api_key
 )
+
 
 template = ChatPromptTemplate.from_messages(
     [
@@ -148,6 +156,14 @@ elif option == "Upload New PDF":
             "Total Documents:",
             len(collection["documents"])
         )
+        st.write(
+    "API Key Loaded:",
+    bool(os.getenv("MISTRAL_API_KEY"))
+)
+
+
+
+
 # Chat History
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -202,7 +218,12 @@ if question:
         }
     )
     
-    response = llm.invoke(prompt)
+    try:
+        response = llm.invoke(prompt)
+
+    except Exception as e:
+        st.error(f"LLM Error: {e}")
+        st.stop()
     
     with st.chat_message("assistant"):
         st.markdown(response.content)
