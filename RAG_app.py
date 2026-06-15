@@ -68,9 +68,17 @@ if option == "Use Default Stock Market PDF":
 
     try:
 
-        pdf_path = "Module 1_Introduction to Stock Markets.pdf"
+        pdf_path = os.path.join(
+            "documents_loader",
+            "Module 1_Introduction to Stock Markets.pdf"
+        )
+
+        if not os.path.exists(pdf_path):
+            st.error(f"PDF not found: {pdf_path}")
+            st.stop()
 
         loader = PyPDFLoader(pdf_path)
+
         docs = loader.load()
 
         splitter = RecursiveCharacterTextSplitter(
@@ -96,7 +104,6 @@ if option == "Use Default Stock Market PDF":
 
     except Exception as e:
         st.error(f"Error loading PDF: {e}")
-
 
 elif option == "Upload New PDF":
 
